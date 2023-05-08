@@ -106,9 +106,7 @@ members = [
     "zk-token-sdk",
 ]
 
-exclude = [
-    "programs/sbf",
-]
+exclude = ["programs/sbf"]
 
 # This prevents a Travis CI error when building for Windows.
 resolver = "2"
@@ -168,7 +166,7 @@ criterion-stats = "0.3.0"
 crossbeam-channel = "0.5.8"
 csv = "1.2.1"
 ctrlc = "3.2.5"
-curve25519-dalek = "3.2.1"
+curve25519-dalek = "4.0.0-rc.2"
 dashmap = "4.0.2"
 derivation-path = { version = "0.2.0", default-features = false }
 dialoguer = "0.10.4"
@@ -210,7 +208,9 @@ indexmap = "1.9.2"
 indicatif = "0.17.3"
 Inflector = "0.11.4"
 itertools = "0.10.5"
-jemallocator = { package = "tikv-jemallocator", version = "0.4.1", features = ["unprefixed_malloc_on_supported_platforms"] }
+jemallocator = { package = "tikv-jemallocator", version = "0.4.1", features = [
+    "unprefixed_malloc_on_supported_platforms",
+] }
 js-sys = "0.3.59"
 json5 = "0.4.1"
 jsonrpc-core = "18.0.0"
